@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            background-color: blue;
+            padding: 10px;
+            border: 0px;
+        }
+        .button:hover{
+            background-color: red;
+        }
+        .button:active{
+            background-color: orange;
+        }
+        .button:focus{
+            background-color: black;
+        }
+        input:focus{
+            background-color: blueviolet;
+        }
+        .container .item1:first-child{
+            background-color: red;
+        }
+        .container .item2:nth-child(2){
+            background-color: red;
+        }
+        .container .item3:last-child{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- hovor = วาง active = คลิก-->
+     <input type="text">
+    <button class="button">button</button>
+
+    <div class="container">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        
+    </div>
+    
+</body>
+</html>

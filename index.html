@@ -1,58 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <!--ส่วนที่ไม่แสดงออกที่หน้าเว็บ-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*สิ่งที่อยู่ตรงนี้ จะมีไว้ให้แค้ dev อ่าน*/
+        /*1.แต่งใคร (id, class , Dom) 2.แต่งอะไร  */
+        @font-face{
+            font-family: 'kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
+        }
+        
+        body {
+            font-family: 'kanit';
+            font-size: 14px;
+        }
+                
+        .container {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            background-color: rgb(169, 172, 171);
+        }
+        .header {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: gray;
+        }
+        .header-form {
+            width: 100px;
+        }
+        .flex {
+            display: flex;
+        }
+        .form-input {
+            margin-bottom: 10px;
+        }
+        input.form, textarea {
+            border: 1px solid #ccc ;
+            width: 100%;
+        }
+        .center {
+            text-align: center;
+        }
+        .button {
+            border: 0;
+            width: 30%;
+            height: 50px;
+        }
+        
+                
+    </style>
+
 </head>
 <body>
-    <h1> hello world </h1>
-    <p>hudsp</p>
-    <ul>
-        <li>
-            pakkom
-        </li>
-    </ul>
-    <ol>
-        <li>pakkom
+    <div class="container">
+        <div class="header">
+        Register form 
+        </div>
+        <div>
+            <div class="flex form-input"> 
+            <div class ="header-form">ชื่อ</div>
+            <input class ="from"type="text">
+        </div>
+        <div class="flex form-input"> 
+            <div class ="header-form">นามสกุล</div>
+            <input class ="from"type="text">
+        </div>
+        <div class="flex form-input">         
+            <div class="header-form">อายุ</div>
+            <input class ="from"type="number"min="0" max="150">
+        </div>
 
-        </li>
-    </ol>
+        <div class="flex gender form-input">
+            <div class ="header-form">เพศ</div>
+            <div>
+                <input name ="gender" type="radio">ชาย
+                <input name="gender"type="radio">หญิง
+                <input name="gender"type="radio">อื่น ๆ
+            </div>
+        </div>
+
+        <div class="form-input">
+            <div class ="header-form">งานอดิเรก</div>
+            <div>
+                <input name ="interest" type="checkbox">อ่านหนังสือ
+            </div>
+            <div>
+                <input name ="interest" type="checkbox">เล่นเกม
+            </div>
+            <div>
+                <input name ="interest" type="checkbox">ฟังเพลง
+            </div>
+            <div>
+                <input name ="interest" type="checkbox">ดูหนัง
+            </div>
+        </div>
+
+        <div class ="header-form">คำอธิบายตัวเอง</div>
+            <textarea></textarea>
+        </div>
+        <div class="center">
+            <button class="button">ส่งข้อมูล</button>
+        </div>
+    </div>    
 
     
-    
-    <div> </div>
-    
-    
-    <Table>
-       <thead>
-        <tr>
-            <th>firstname</th>
-            <th>lastame</th>
-            <th>age</th>
-
-        </tr>
-       </thead>
-       <tbody>
-        <tr>
-            <th>
-                pakkkom
-            </th>
-        </tr>
-       </tbody>
-    </Table>
-    ><h1>w3schools</h1>
-    <a href="https://www.w3schools.com/" target="_blank">visit w3schools.com</a><br>
-
-    <img src="https://picsum.photos/id/237/200/300"
-    width="100px"
-    height="200px"
-    >
-    <section>
-        <h1>WWF</h1>
-        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
-        </section>
-
 </body>
 </html>
